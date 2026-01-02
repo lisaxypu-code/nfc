@@ -1,42 +1,7 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>NFC Attendance</title>
-  <style>
-    body {
-      font-family: system-ui, -apple-system;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      background: #f7f8fa;
-    }
-    button {
-      font-size: 18px;
-      padding: 16px 28px;
-      border-radius: 14px;
-      border: none;
-      background: #0066cc;
-      color: white;
-    }
-  </style>
-</head>
-<body>
-
-<button onclick="openInChrome()">Tap to open attendance</button>
-
+<meta charset="utf-8">
 <script>
-function openInChrome() {
-  var url =
-    "https://script.google.com/macros/s/AKfycbwIKS2wZOW30oW_9PuXTMyjtjZM_BkHFySLUCgbIxpDw3ZSjCe99iPc_g8w7jDrQYaN/exec";
-
-  // Android Chrome intent
-  window.location.href =
-    "intent://" + url.replace(/^https?:\/\//, "") +
-    "#Intent;scheme=https;package=com.android.chrome;end";
-}
+location.replace(
+  "https://script.google.com/macros/s/AKfycbwIKS2wZOW30oW_9PuXTMyjtjZM_BkHFySLUCgbIxpDw3ZSjCe99iPc_g8w7jDrQYaN/exec"
+);
 </script>
-
-</body>
-</html>
